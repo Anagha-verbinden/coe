@@ -206,3 +206,128 @@
 .main-content section {
   margin-bottom: 35px;
 }
+/* =========================
+   UNIVERSITY ACTIVITY
+   ========================= */
+
+.university-activity {
+  margin-top: 40px;
+
+  background-color: #ffffff;
+
+  border-radius: 16px;
+
+  padding: 32px;
+
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =========================
+   ACTIVITY HEADER
+   ========================= */
+
+.activity-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 28px;
+}
+
+.activity-header h2 {
+  margin: 0;
+
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.activity-header input {
+  width: 400px;
+  height: 55px;
+
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+
+  padding: 0 18px;
+
+  font-size: 18px;
+
+  outline: none;
+}
+
+
+/* =========================
+   TABLE CONTAINER
+   ========================= */
+
+.table-container {
+  width: 100%;
+
+  overflow-x: auto;
+}
+
+
+/* =========================
+   TABLE
+   ========================= */
+
+.table-container table {
+  width: 100%;
+
+  min-width: 1100px;
+
+  border-collapse: collapse;
+}
+
+
+/* =========================
+   TABLE HEADER
+   ========================= */
+
+th {
+  padding: 16px 24px;
+
+  text-align: left;
+
+  font-size: 18px;
+  font-weight: 400;
+
+  color: #6f788b;
+
+  background-color: #eaf0ff;
+
+  height: 70px;
+}
+
+
+/* =========================
+   TABLE BODY
+   ========================= */
+
+td {
+  padding: 20px 24px;
+
+  font-size: 18px;
+
+  color: #183b64;
+
+  border-bottom: 1px solid #dddddd;
+
+  white-space: nowrap;
+}
+
+
+/* =========================
+   COLUMN WIDTHS
+   ========================= */
+
+th:first-child,
+td:first-child {
+  min-width: 280px;
+}
+
+th:not(:first-child),
+td:not(:first-child) {
+  min-width: 180px;
+}
