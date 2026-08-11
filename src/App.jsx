@@ -15,6 +15,7 @@ import {
   Mail,
   User,
   Users,
+  Search,
 } from "lucide-react";
 import UniversityActivity from "./components/UniversityActivity";
 
