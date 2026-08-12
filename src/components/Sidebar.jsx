@@ -1,4 +1,5 @@
 import { BadgePercent, BookOpen, ChevronLeft, FileText, GraduationCap, LayoutDashboard, LogOut, Mail, Users } from "lucide-react";
+import { NavLink } from "react-router-dom";
 function Sidebar() {
     return (
         <aside className="sidebar">
@@ -8,15 +9,16 @@ function Sidebar() {
                     <ChevronLeft size={30}/>
                 </button>
             </div>
+            {/* giving hash in place of /programs doesn't affect anything, it stays in the same page. */}
             <nav className="sidebar-nav">
-                <a href="#" className="nav-item">
+                <NavLink to="/" className="nav-item">
                     <LayoutDashboard size={20}/>
                     <span>Dashboard</span>
-                </a>
-                <a href="#" className="nav-item">
+                </NavLink>
+                <NavLink to="/programs" className="nav-item">
                     <BookOpen size={20}/>
                     <span>Programs</span>
-                </a>
+                </NavLink>
                 <a href="#" className="nav-item">
                     <GraduationCap size={20}/>
                     <span>Universities</span>
