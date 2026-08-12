@@ -36,6 +36,8 @@ const universities = [
 
 function UniversityActivity() {
   const [search, setSearch] = useState("")
+  const filteredUniversities = universities.filter((university)=>university.name.toLowerCase().includes(search.toLowerCase()));
+  // university name considers name of universities and includes() will check whether name contains the search text and returns true if so.
   return (
     <section className="university-activity">
 
@@ -47,16 +49,16 @@ function UniversityActivity() {
             type="text"
             placeholder="Search Universities"
             value={search}
-            onChange={(e)=>setSearch(e.target.value)}
+            onChange={(e)=>setSearch(e.target.value)}  // this is where the search input is being taken and fed to search.
           />
           <Search size={30} />
         </div>
       </div>
 
-
+{/* TableContainer controls visible area and scrolling while table controls table content and width.
+if we try to do overflow - auto in table , overflow will be disabled, text bleeding outside screen will be cut. */}
       <TableContainer>
         <table>
-
           <thead>
             <tr>
               <th>University Name</th>
@@ -72,7 +74,7 @@ function UniversityActivity() {
 
           <tbody>
 
-            {universities.map((university) => (
+            {filteredUniversities.map((university) => (
               <tr key={university.name}>
                 <td>{university.name}</td>
                 <td>{university.programs}</td>
