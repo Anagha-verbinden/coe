@@ -65,6 +65,7 @@ const ProgramActivity = () => {
             placeholder="Search programs..."
             value={search}
             onChange={(e) => setSearch(e.target.value)}
+            // e is action like giving input or mouseclick , target is targetting that html element and value is accessing the value inside it.
             className="flex-1 bg-transparent text-lg outline-none placeholder:text-[#8b93a3]"
           />
           <Search
@@ -89,7 +90,7 @@ const ProgramActivity = () => {
                   Program Level
                 </th>
 
-                <th className="min-w-[180px] bg-[#eaf0ff] px-6 py-4 text-left text-lg font-normal text-[#6f788b]">
+                <th className="min-w-[180px] bg-[#eaf0ff] px-6 py-4 text-center text-lg font-normal text-[#6f788b]">
                   Modules
                 </th>
 
@@ -126,7 +127,7 @@ const ProgramActivity = () => {
                     {program.level}
                   </td>
 
-                  <td className="min-w-[180px] whitespace-nowrap border-b border-[#dddddd] px-6 py-5 text-lg text-[#183b64]">
+                  <td className="min-w-[180px] whitespace-nowrap border-b border-[#dddddd] px-6 py-5 text-lg text-[#183b64] text-center">
                     {program.modules}
                   </td>
 

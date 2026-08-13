@@ -1,6 +1,7 @@
 import Sidebar from "./components/Sidebar";
 import Dashboard from "./pages/Dashboard";
 import Programs from "./pages/Programs";
+import Universities from "./pages/Universities"
 import { Routes, Route } from "react-router-dom";
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Dashboard />} />
           <Route path="/programs" element={<Programs />} />
+          <Route path="/universities" element={<Universities/>}/>
         </Routes>
       </main>
     </>

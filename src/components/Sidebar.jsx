@@ -70,13 +70,13 @@ function Sidebar() {
           <span>Programs</span>
         </NavLink>
 
-        <a
-          href="#"
+        <NavLink
+          to="/universities"
           className="flex h-16 items-center gap-[22px] rounded-xl px-[22px] text-[23px] font-medium text-white no-underline transition-all duration-200 hover:bg-white/15"
         >
           <GraduationCap size={20} />
           <span>Universities</span>
-        </a>
+        </NavLink>
 
         <a
           href="#"
