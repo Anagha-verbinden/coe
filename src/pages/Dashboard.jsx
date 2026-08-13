@@ -21,10 +21,10 @@ import StatCard from "../components/StatCard";
 const Dashboard = () => {
   return (
     <div>
-      <main className="main-content">
+      <main>
         <section>
-          <h2>University Data</h2>
-          <div className="stats-grid">
+          <h2 className="text-[24px] font-semibold mb-1">University Data</h2>
+          <div className="grid grid-cols-4 gap-[22px] mb-4">
             <StatCard
               icon={GraduationCap}
               value="3"
@@ -44,15 +44,15 @@ const Dashboard = () => {
           </div>
         </section>
         <section>
-          <h2>Cohorts Data</h2>
-          <div className="stats-grid">
+          <h2 className="text-[24px] font-semibold mb-1">Cohorts Data</h2>
+          <div className="grid grid-cols-4 gap-[22px] mb-4">
             <StatCard icon={Users} value="18" label="Total Cohort" />
             <StatCard icon={Users} value="2" label="Total Active Cohort" />
           </div>
         </section>
         <section>
-          <h2>Students Data</h2>
-          <div className="stats-grid">
+          <h2 className="text-[24px] font-semibold mb-1">Students Data</h2>
+          <div className="grid grid-cols-4 gap-[22px] mb-4">
             <StatCard icon={GraduationCap} value="8" label="Total Students" />
             <StatCard
               icon={GraduationCap}
